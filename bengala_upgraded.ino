@@ -1,4 +1,4 @@
-const int buzzer = 3;
+const int buzzer = 3; // If you want to use a different port you need to change this const number
 
 void setup(){
 	pinMode(buzzer, OUTPUT);
