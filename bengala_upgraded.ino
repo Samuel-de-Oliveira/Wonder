@@ -1,4 +1,4 @@
-const int buzzer = 7;
+const int buzzer = 3;
 
 void setup(){
 	pinMode(buzzer, OUTPUT);
@@ -8,6 +8,7 @@ void setup(){
 void loop(){
 	tone(buzzer, 150, 250);
 	delay(250);
-	untone(buzzer);
-	delay(250);
+	Serial.print("The buzzer did a song\n");
+	noTone(buzzer);
+	delay(1000);
 }
