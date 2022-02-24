@@ -8,6 +8,3 @@ BOARD_TAG = uno
 BOARD_SUB = atmega328
 
 include /usr/share/arduino/Arduino.mk
-
-clean: bengala_upgraded.ino
-	rm -rf build-uno-atmega328/
