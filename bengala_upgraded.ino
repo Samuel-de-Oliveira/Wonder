@@ -8,10 +8,13 @@ void setup() {
 
 void loop() {
 	tone(buzzer, noise, 250);
-	Serial.println("The buzzer did a noise");
+	Serial.print("Frequance: ");
+	Serial.print(noise);
+	Serial.println("Hz");
 	delay(250);
+
 	noTone(buzzer);
-	noise = noise - 100;
+	noise = noise - 50;
 	if (noise <= 0) { noise = 1000; }
-	delay(1000);
+	delay(750);
 }
