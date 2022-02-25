@@ -1,6 +1,5 @@
-## Bengala Upgraded Version 0.1 Beta
+## Bengala Upgraded
 
-this is project created by studants of Microcamp in Alagoas/Brazil
-and is a "Bengala" who tell to the blind person if have something
-upper on "Bengala" with beeps of a buzzer
-
+#### Version: *0.1 BETA*.
+#### Owner of project: *Samuel de Oliveira*.
+#### Project created by studants of Microcamp to a Open Source experiment.
