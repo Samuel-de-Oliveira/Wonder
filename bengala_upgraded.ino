@@ -1,35 +1,25 @@
-//Programa: Conectando Sensor Ultrassonico HC-SR04 ao Arduino
-//Autor: FILIPEFLOP
- 
-//Carrega a biblioteca do sensor ultrassonico
 #include <Ultrasonic.h>
  
-//Define os pinos para o trigger e echo
-#define pino_trigger 4
-#define pino_echo 5
+// Define pin nunbers here
+const byte trigger = 3;
+const byte echo = 4;
  
-//Inicializa o sensor nos pinos definidos acima
-Ultrasonic ultrasonic(pino_trigger, pino_echo);
+Ultrasonic ultrasonic(trigger, echo);
  
-void setup()
-{
-	  Serial.begin(9600);
-	    Serial.println("Lendo dados do sensor...");
-	    
+void setup() {
+	Serial.begin(9600);
+	Serial.println("Reading the data of sensor...");
 }
- 
-void loop()
-{
-	  //Le as informacoes do sensor, em cm e pol
-	  float cmMsec, inMsec;
-	    long microsec = ultrasonic.timing();
-	      cmMsec = ultrasonic.convert(microsec, Ultrasonic::CM);
-	        inMsec = ultrasonic.convert(microsec, Ultrasonic::IN);
-		  //Exibe informacoes no serial monitor
-		  Serial.print("Distancia em cm: ");
-		    Serial.print(cmMsec);
-		      Serial.print(" - Distancia em polegadas: ");
-		        Serial.println(inMsec);
-			  delay(1000);
-			  
+
+void loop() {
+	float cmMsec, inMsec;
+	long microsec = ultrasonic.timing();
+	cmMsec = ultrasonic.convert(microsec, Ultrasonic::CM);
+	inMsec = ultrasonic.convert(microsec, Ultrasonic::IN);
+
+	Serial.print("Distancia em cm: ");
+	Serial.print(cmMsec);
+	Serial.print(" - Distancia em polegadas: ");
+	Serial.println(inMsec);
+	delay(1000);
 }
