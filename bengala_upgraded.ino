@@ -1,20 +1,25 @@
-const int buzzer = 3; // If you want to use a different port you need to change this const number
-int noise = 1000;
-
+#include <Ultrasonic.h>
+ 
+const int trigger = 4
+const int echo =  5
+ 
+Ultrasonic ultrasonic(pino_trigger, pino_echo);
+ 
 void setup() {
-	pinMode(buzzer, OUTPUT);
 	Serial.begin(9600);
+	Serial.println("Lendo dados do sensor...");
 }
-
+ 
 void loop() {
-	tone(buzzer, noise, 250);
-	Serial.print("Frequance: ");
-	Serial.print(noise);
-	Serial.println("Hz");
-	delay(250);
+	float cmMsec, inMsec;
+	long microsec = ultrasonMic.timing();
 
-	noTone(buzzer);
-	noise = noise - 50;
-	if (noise <= 0) { noise = 1000; }
-	delay(750);
+	cmMsec = ultrasonic.convert(microsec, Ultrasonic::CM);
+	inMsec = ultrasonic.convert(microsec, Ultrasonic::IN);
+
+	Serial.print("Distancia em cm: ");
+	Serial.print(cmMsec);
+	Serial.print(" - Distancia em polegadas: ");
+	Serial.println(inMsec);
+	delay(1000);
 }
