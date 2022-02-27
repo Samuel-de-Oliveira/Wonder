@@ -1,19 +1,23 @@
 #include <HCSR04.h>
 
-// Initialize sensor that uses digital pins 13 and 12.
+// Here is the Pins scheme, you can change it if you want :)
 const byte triggerPin = 3;
-const byte echoPin = 4;
+const byte echoPin    = 4;
+const byte buzzerPin  = 9;
+
 UltraSonicDistanceSensor distanceSensor(triggerPin, echoPin);
 
-void setup () {
-	    Serial.begin(9600);  // We initialize serial connection so that we could print values from sensor.
-	    
+void setup() {
+	Serial.begin(9600);
 }
 
 void loop () {
-	    // Every 500 miliseconds, do a measurement using the sensor and print the distance in centimeters.
 	    float distance = distanceSensor.measureDistanceCm();
-	        Serial.println(distance);
+	    
+	    if (distance <= 12) {
+		    tone(buzzerPin, 523, 250);
+		    delay(250);
+		    noTone(buzzerPin);
 		    delay(500);
-		    
+	    }	    
 }
