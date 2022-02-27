@@ -1,25 +1,19 @@
-#include <Ultrasonic.h>
- 
-// Define pin nunbers here
-const byte trigger = 3;
-const byte echo = 4;
- 
-Ultrasonic ultrasonic(trigger, echo);
- 
-void setup() {
-	Serial.begin(9600);
-	Serial.println("Reading the data of sensor...");
+#include <HCSR04.h>
+
+// Initialize sensor that uses digital pins 13 and 12.
+const byte triggerPin = 3;
+const byte echoPin = 4;
+UltraSonicDistanceSensor distanceSensor(triggerPin, echoPin);
+
+void setup () {
+	    Serial.begin(9600);  // We initialize serial connection so that we could print values from sensor.
+	    
 }
 
-void loop() {
-	float cmMsec, inMsec;
-	long microsec = ultrasonic.timing();
-	cmMsec = ultrasonic.convert(microsec, Ultrasonic::CM);
-	inMsec = ultrasonic.convert(microsec, Ultrasonic::IN);
-
-	Serial.print("Distancia em cm: ");
-	Serial.print(cmMsec);
-	Serial.print(" - Distancia em polegadas: ");
-	Serial.println(inMsec);
-	delay(1000);
+void loop () {
+	    // Every 500 miliseconds, do a measurement using the sensor and print the distance in centimeters.
+	    float distance = distanceSensor.measureDistanceCm();
+	        Serial.println(distance);
+		    delay(500);
+		    
 }
