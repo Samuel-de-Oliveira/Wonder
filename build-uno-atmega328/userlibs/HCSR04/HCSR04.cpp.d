@@ -1,4 +1,5 @@
-build-uno-atmega328/bengala_upgraded.ino.o: bengala_upgraded.ino \
+build-uno-atmega328/userlibs/HCSR04/HCSR04.cpp.o: \
+ /home/samuel/Arduino/libraries/HCSR04/HCSR04.cpp \
  /usr/share/arduino/hardware/arduino//cores/arduino/Arduino.h \
  /usr/share/arduino/hardware/arduino//cores/arduino/binary.h \
  /usr/share/arduino/hardware/arduino//cores/arduino/WCharacter.h \
