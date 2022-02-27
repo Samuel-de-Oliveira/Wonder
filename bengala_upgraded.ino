@@ -13,11 +13,19 @@ void setup() {
 
 void loop () {
 	    float distance = distanceSensor.measureDistanceCm();
-	    
-	    if (distance <= 12) {
-		    tone(buzzerPin, 523, 250);
+		
+
+	    if (12 < distance and distance <= 30) {
+		    tone(buzzerPin, 600, 250);
 		    delay(250);
 		    noTone(buzzerPin);
 		    delay(500);
-	    }	    
+
+	    } else if (distance <= 12) {
+
+		    tone(buzzerPin, 600, 250);
+		    delay(250);
+		    noTone(buzzerPin);
+		    delay(250);
+	    } 
 }

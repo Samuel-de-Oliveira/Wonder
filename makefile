@@ -1,5 +1,6 @@
-# Makefile to who use sudar's Arduino makefile
-
+# Makefile to who use Sudar's Arduino Makefile tool
+# Change the variables if it's needed.
+ 
 ARDUINO_DIR    = /usr/share/arduino
 ARDUINO_PORT   = /dev/ttyACM0
 MONITOR_PORT   = /dev/ttyACM0
