@@ -6,6 +6,10 @@ not is Open Source, because this we (Studants of Microcamp in Arapiraca)
 decided to create a Open Source version to make a experimet with outhers
 studants to tell about the matter of Open Source for people with disbilities
 
+### How to build this?
+
+![Imagens/scheme.jpg](Created in tinkercad)
+
 #### Version: *0.1 BETA*.
 #### Owner of project: *Samuel de Oliveira*.
 #### Project created by studants of Microcamp to a Open Source experiment.

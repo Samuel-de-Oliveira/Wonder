@@ -26,14 +26,14 @@ void loop () {
 	    if (25 < distance and distance <= 50) {
 
 		    tone(buzzerPin, 800, 300);
-		    delay(250);
+		    delay(300);
 		    noTone(buzzerPin);
 		    delay(500);
 	    } else if (distance <= 25) {
 
 		    tone(buzzerPin, 800, 300);
-		    delay(250);
+		    delay(200);
 		    noTone(buzzerPin);
-		    delay(250);
+		    delay(200);
 	    } 
 }
