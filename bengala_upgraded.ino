@@ -20,18 +20,20 @@ void setup() {
 	Serial.begin(9600);
 }
 
-void loop () {
+void loop() {
 	    float distance = distanceSensor.measureDistanceCm();
 
 	    if (25 < distance and distance <= 50) {
 
-		    tone(buzzerPin, 800, 300);
+		    Serial.println("I find something far me!");
+		    tone(buzzerPin, 1100, 300);
 		    delay(300);
 		    noTone(buzzerPin);
 		    delay(500);
 	    } else if (distance <= 25) {
 
-		    tone(buzzerPin, 800, 300);
+		    Serial.println("I find something near me!");
+		    tone(buzzerPin, 1100, 300);
 		    delay(200);
 		    noTone(buzzerPin);
 		    delay(200);

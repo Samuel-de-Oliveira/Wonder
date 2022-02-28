@@ -8,7 +8,7 @@ studants to tell about the matter of Open Source for people with disbilities
 
 ### How to build this?
 
-![Imagens/scheme.jpg]
+<img src="Imagens/scheme.jpg">
 
 #### Version: *0.1 BETA*.
 #### Owner of project: *Samuel de Oliveira*.
