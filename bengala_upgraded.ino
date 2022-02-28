@@ -1,6 +1,9 @@
 /*
  * --*--* Bengala_upgraded *--*--
  * 
+ * This project is based in a outher one made by studants
+ * of Federal Institute of Mato Grosso.
+ *
  * Author: Samuel de Oliveira (Github: Samuel-de-Oliveira)
  * Contribuitors: None
  *
@@ -9,9 +12,10 @@
 #include <HCSR04.h>
 
 // Here is the pins scheme, you can change it if you want :)
-const byte triggerPin = 3;
-const byte echoPin    = 4;
-const byte buzzerPin  = 9;
+const byte triggerPin   = 3;
+const byte echoPin      = 4;
+const byte vibrationPin = 8;
+const byte buzzerPin    = 9;
 
 UltraSonicDistanceSensor distanceSensor(triggerPin, echoPin);
 

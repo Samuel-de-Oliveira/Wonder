@@ -8,6 +8,19 @@ studants to tell about the matter of Open Source for people with disbilities
 
 ### How to build this?
 
+First you need this materials to start:
+
+**Software:**
+
+- Arduino IDE (or [https://github.com/sudar/arduino-makefile](Arduino Makefile)) to compile code.
+- [github.com/](HCSR04) library.
+
+**Hardware:**
+
+- **1** X Arduino UNO or Arduino Nano
+- **1** X Ultrassonic sensor (HCSR04)
+- **1** X Buzzer or Piezo
+
 <img src="Imagens/scheme.jpg">
 
 #### Version: *0.1 BETA*.
