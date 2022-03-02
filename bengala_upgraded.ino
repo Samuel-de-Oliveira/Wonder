@@ -28,7 +28,7 @@ void setup() {
 void loop() {
 	    float distance = distanceSensor.measureDistanceCm();
 
-	    if (35 < distance and distance <= 50) {
+	    if (40 < distance and distance <= 65) {
 
 		    Serial.println("I find something far me!");
 		    tone(buzzerPin, 1100, 300);
@@ -37,7 +37,7 @@ void loop() {
 		    noTone(buzzerPin);
 		    digitalWrite(vibrationPin, LOW);
 		    delay(500);
-	    } else if (distance <= 35) {
+	    } else if (distance <= 40) {
 
 		    Serial.println("I find something near me!");
 		    tone(buzzerPin, 1100, 300);
