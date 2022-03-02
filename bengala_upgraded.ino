@@ -14,13 +14,14 @@
 // Here is the pins scheme, you can change it if you want :)
 const byte triggerPin   = 3;
 const byte echoPin      = 4;
-const byte vibrationPin = 8;
+const byte vibrationPin = 10;
 const byte buzzerPin    = 9;
 
 UltraSonicDistanceSensor distanceSensor(triggerPin, echoPin);
 
 void setup() {
 	pinMode(buzzerPin, OUTPUT);
+	pinMode(vibrationPin, OUTPUT);
 	Serial.begin(9600);
 }
 
@@ -31,15 +32,19 @@ void loop() {
 
 		    Serial.println("I find something far me!");
 		    tone(buzzerPin, 1100, 300);
+		    digitalWrite(vibrationPin, HIGH);
 		    delay(300);
 		    noTone(buzzerPin);
+		    digitalWrite(vibrationPin, LOW);
 		    delay(500);
 	    } else if (distance <= 35) {
 
 		    Serial.println("I find something near me!");
 		    tone(buzzerPin, 1100, 300);
+		    digitalWrite(vibrationPin, HIGH);
 		    delay(200);
 		    noTone(buzzerPin);
+		    digitalWrite(vibrationPin, LOW);
 		    delay(200);
 	    } 
 }
