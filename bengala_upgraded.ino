@@ -2,7 +2,10 @@
  * --*--* Bengala_upgraded *--*--
  * 
  * This project is based in a outher one made by studants
- * of Federal Institute of Mato Grosso.
+ * of Federal Institute of Mato Grosso. This project diferent
+ * of outher is Open Source, so it's created to make a experiment
+ * with studants to know the matters of Open Source for people
+ * with disabilities
  *
  * Author: Samuel de Oliveira (Github: Samuel-de-Oliveira)
  * Contribuitors: None
@@ -30,7 +33,7 @@ void loop() {
 
 	if (distance = -1) {
 
-		Serial.println("The ultrassonic is inactive!");
+		Serial.println("The ultrasonic is inactive!");
 		tone(buzzerPin, 800, 300);
 		delay(250);
 		noTone(buzzerPin);
@@ -54,4 +57,6 @@ void loop() {
 		digitalWrite(vibrationPin, LOW);
 		delay(200);
 	}
+
+	Serial.println(distance);
 }
