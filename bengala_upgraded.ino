@@ -31,7 +31,7 @@ void setup() {
 void loop() {
 	float distance = distanceSensor.measureDistanceCm();
 
-	if (distance = -1) {
+	if (distance == -1) {
 
 		Serial.println("The ultrasonic is inactive!");
 		tone(buzzerPin, 800, 300);
