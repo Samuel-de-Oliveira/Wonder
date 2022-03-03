@@ -34,10 +34,15 @@ void loop() {
 	if (distance == -1) {
 
 		Serial.println("The ultrasonic is inactive!");
-		tone(buzzerPin, 800, 300);
+		for (int i = 0; i < 3; i++) {
+
+			tone(buzzerPin, 1000, 300);
+			delay(100);
+			noTone(buzzerPin);
+			delay(250);
+		}
 		delay(250);
-		noTone(buzzerPin);
-		delay(400);
+
 	} else if (40 < distance and distance <= 65) {
 
 		Serial.println("I find something far me!");
