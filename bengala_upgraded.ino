@@ -26,25 +26,32 @@ void setup() {
 }
 
 void loop() {
-	    float distance = distanceSensor.measureDistanceCm();
+	float distance = distanceSensor.measureDistanceCm();
 
-	    if (40 < distance and distance <= 65) {
+	if (distance = -1) {
 
-		    Serial.println("I find something far me!");
-		    tone(buzzerPin, 1100, 300);
-		    digitalWrite(vibrationPin, HIGH);
-		    delay(300);
-		    noTone(buzzerPin);
-		    digitalWrite(vibrationPin, LOW);
-		    delay(500);
-	    } else if (distance <= 40) {
+		Serial.println("The ultrassonic is inactive!");
+		tone(buzzerPin, 800, 300);
+		delay(250);
+		noTone(buzzerPin);
+		delay(400);
+	} else if (40 < distance and distance <= 65) {
 
-		    Serial.println("I find something near me!");
-		    tone(buzzerPin, 1100, 300);
-		    digitalWrite(vibrationPin, HIGH);
-		    delay(200);
-		    noTone(buzzerPin);
-		    digitalWrite(vibrationPin, LOW);
-		    delay(200);
-	    } 
+		Serial.println("I find something far me!");
+		tone(buzzerPin, 1100, 300);
+		digitalWrite(vibrationPin, HIGH);
+		delay(300);
+		noTone(buzzerPin);
+		digitalWrite(vibrationPin, LOW);
+		delay(500);
+	} else if (distance <= 40) {
+
+		Serial.println("I find something near me!");
+		tone(buzzerPin, 1100, 300);
+		digitalWrite(vibrationPin, HIGH);
+		delay(200);
+		noTone(buzzerPin);
+		digitalWrite(vibrationPin, LOW);
+		delay(200);
+	}
 }
