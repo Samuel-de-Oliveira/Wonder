@@ -20,6 +20,8 @@ const byte echoPin      = 4;
 const byte vibrationPin = 10;
 const byte buzzerPin    = 9;
 
+const byte Height = 80;
+
 UltraSonicDistanceSensor distanceSensor(triggerPin, echoPin);
 
 void setup() {
@@ -30,6 +32,7 @@ void setup() {
 
 void loop() {
 	float distance = distanceSensor.measureDistanceCm();
+	Serial.println(distance);
 
 	if (distance == -1) {
 
@@ -42,8 +45,7 @@ void loop() {
 			delay(250);
 		}
 		delay(250);
-
-	} else if (40 < distance and distance <= 65) {
+	} else if (Height - 35 < distance and distance <= Height) {
 
 		Serial.println("I find something far me!");
 		tone(buzzerPin, 1100, 300);
@@ -52,7 +54,7 @@ void loop() {
 		noTone(buzzerPin);
 		digitalWrite(vibrationPin, LOW);
 		delay(500);
-	} else if (distance <= 40) {
+	} else if (distance <= Height - 35) {
 
 		Serial.println("I find something near me!");
 		tone(buzzerPin, 1100, 300);
@@ -62,6 +64,4 @@ void loop() {
 		digitalWrite(vibrationPin, LOW);
 		delay(200);
 	}
-
-	Serial.println(distance);
 }
