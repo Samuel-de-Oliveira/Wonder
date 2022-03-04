@@ -1,25 +1,39 @@
 ## Bengala Upgraded
-
 This project is based in a outher project created by studants of IFMT
 (Federal Institute of Mato Grosso) in Brazil, but this mencioned project
 not is Open Source, because this we (Studants of Microcamp in Arapiraca)
 decided to create a Open Source version to make a experimet with outhers
-studants to tell about the matter of Open Source for people with disbilities.
+studants to tell about the importance of Open Source for people with disbilities.
+
+This project accept all issues and pull requests, so if you have a good idea
+don't be shy to share with us. :smile:
+
+### The project working
+
+- Comming soon.
 
 ### How to build this?
-
 First you need this materials to start:
 
 **Software:**
 
 - Arduino IDE or [Arduino Makefile](https://github.com/sudar/arduino-makefile) to compile code.
-- [HCSR04](https://github.com/) library.
+- [HCSR04](https://github.com/Martinsos/arduino-lib-hc-sr04) library.
 
 **Hardware:**
 
-- **1**X Arduino UNO or Arduino Nano
-- **1**X Ultrassonic sensor (HCSR04)
-- **1**X Buzzer or Piezo
+- **1**X Arduino UNO or Arduino Nano;
+- **1**X Ultrassonic sensor (HC-SR04);
+- **120**CM Ethernet cable (To use in conections of components)
+- **1**X 3.3V Buzzer.
+
+**Sugestions of things to use as a walkstick (thats we recommend):**
+
+- Traditional walkstick for blind people;
+- Tree stick (Why not?);
+- Sefie stick.
+
+If you want to add something in your project you are free to do it.
 
 After have all required items you need to make this simple scheme with your
 Arduino:
@@ -27,7 +41,8 @@ Arduino:
 <img src="Imagens/scheme.jpg">
 
 After this you need to clone the repository and compile with IDE or makefile
-and it will work with no errors.
+and it will work with no errors. If some error happens we recommend you check
+where is wrong and call an issues.
 
 #### Version: *0.1 BETA*.
 #### Owner of project: *Samuel de Oliveira*.
