@@ -21,7 +21,7 @@ const byte vibrationPin = 10;
 const byte buzzerPin    = 9;
 
 // Here is the values of fisiology of person (Required to change if you want a good experience).
-const byte Height = 180; // if you digit a value lower than 140cm errors will happen.
+const byte Height = 180; // if you digit a value lower than 130cm, the code couldn't work.
 
 UltraSonicDistanceSensor distanceSensor(triggerPin, echoPin);
 
@@ -35,13 +35,14 @@ void loop() {
 	float distance = distanceSensor.measureDistanceCm();
 	Serial.println(distance);
 
-	if (distance == -1 or Height <= 140) {
+	if (distance == -1 or Height <= 130) {
+		
+		// Error message, will be showed if something is not working in code or circuit.
+		Serial.println("Oh no! Something is not working well");
+		Serial.println("Please check the software's repository in Github for support of this error:");
+		Serial.println("www.github.com/Samuel-de-Oliveira/bengala_upgraded#fix-errors");
 
-		Serial.println("Ups! Something is not working well");
-		Serial.println("Please check the software's repository in Github for more info:");
-		Serial.println("www.github.com/Samuel-de-Oliveira/bengala_upgraded");
-
-		for (int i = 0; i < 3; i++) {
+		for (byte i = 0; i < 3; i++) {
 
 			tone(buzzerPin, 1000, 300);
 			delay(100);
@@ -49,18 +50,22 @@ void loop() {
 			delay(250);
 		}
 		delay(250);
-	} else if ((Height - 135) < distance and distance <= (Height - 100)) {
 
-		Serial.println("I find something far me!");
+	} else if ((Height - 115) < distance and distance <= (Height - 80)) {
+		
+		// Slow beep.
+		Serial.println("I found something far me!");
 		tone(buzzerPin, 1100, 300);
 		digitalWrite(vibrationPin, HIGH);
 		delay(300);
 		noTone(buzzerPin);
 		digitalWrite(vibrationPin, LOW);
 		delay(500);
-	} else if (distance <= (Height - 135)) {
 
-		Serial.println("I find something near me!");
+	} else if (distance <= (Height - 135)) {
+		
+		// Fast beep.
+		Serial.println("I found something near me!");
 		tone(buzzerPin, 1100, 300);
 		digitalWrite(vibrationPin, HIGH);
 		delay(200);
