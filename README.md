@@ -41,8 +41,21 @@ Arduino:
 <img src="Imagens/scheme.jpg">
 
 After this you need to clone the repository and compile with IDE or makefile
-and it will work with no errors. If some error happens we recommend you check
-where is wrong and call an issues.
+and it will work with no errors. If the project is not working well or having
+any error, please check the next topic.
+
+### Fix Errors
+So to know if your project is having any error, check the monitor serial and
+if the you see a message like this:
+
+	Oh no! Something is not working well
+	Please check the software's repository in Github for support of this error:
+	www.github.com/Samuel-de-Oliveira/bengala_upgraded#fix-errors
+
+This is a code error, to fix it check if one of these situations is same of yours:
+
+1. The ultrassonic is not connected or the connections are wrong. (To solve you just need to connect the ultrassonic in your Arduino).
+1. The constant `Height` is lower than 130cms (To solve you need to write a value higher than 130 cm).
 
 #### Version: *0.1 BETA*.
 #### Owner of project: *Samuel de Oliveira*.
