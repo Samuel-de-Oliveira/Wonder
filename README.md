@@ -54,8 +54,11 @@ if the you see a message like this:
 
 This is a code error, to fix it check if one of these situations is same of yours:
 
-1. The ultrassonic is not connected or the connections are wrong. (To solve you just need to connect the ultrassonic in your Arduino).
+1. The ultrasonic is not connected or the connections are wrong. (To solve you just need to connect the ultrassonic in your Arduino).
 1. The constant `Height` is lower than 130cms (To solve you need to write a value higher than 130 cm).
+
+If you don't see this message probally is something wrong in the circuit scheme,
+so you need to check the connections again.
 
 #### Version: *0.1 BETA*.
 #### Owner of project: *Samuel de Oliveira*.
