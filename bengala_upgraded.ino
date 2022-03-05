@@ -5,7 +5,7 @@
  * of Federal Institute of Mato Grosso. This project diferent
  * of outher is Open Source, so it's created to make a experiment
  * with studants to know the matters of Open Source for people
- * with disabilities
+ * with disabilities.
  *
  * Author: Samuel de Oliveira (Github: Samuel-de-Oliveira)
  * Contribuitors: None
@@ -14,13 +14,14 @@
 
 #include <HCSR04.h>
 
-// Here is the pins scheme, you can change it if you want :)
+// Here is the pins scheme, you can change it if you want.
 const byte triggerPin   = 3;
 const byte echoPin      = 4;
 const byte vibrationPin = 10;
 const byte buzzerPin    = 9;
 
-const byte Height = 80;
+// Here is the values of fisiology of person (Required to change if you want a good experience).
+const byte Height = 180; // if you digit a value lower than 140cm errors will happen.
 
 UltraSonicDistanceSensor distanceSensor(triggerPin, echoPin);
 
@@ -34,9 +35,12 @@ void loop() {
 	float distance = distanceSensor.measureDistanceCm();
 	Serial.println(distance);
 
-	if (distance == -1) {
+	if (distance == -1 or Height <= 140) {
 
-		Serial.println("The ultrasonic is inactive!");
+		Serial.println("Ups! Something is not working well");
+		Serial.println("Please check the software's repository in Github for more info:");
+		Serial.println("www.github.com/Samuel-de-Oliveira/bengala_upgraded");
+
 		for (int i = 0; i < 3; i++) {
 
 			tone(buzzerPin, 1000, 300);
@@ -45,7 +49,7 @@ void loop() {
 			delay(250);
 		}
 		delay(250);
-	} else if (Height - 35 < distance and distance <= Height) {
+	} else if ((Height - 135) < distance and distance <= (Height - 100)) {
 
 		Serial.println("I find something far me!");
 		tone(buzzerPin, 1100, 300);
@@ -54,7 +58,7 @@ void loop() {
 		noTone(buzzerPin);
 		digitalWrite(vibrationPin, LOW);
 		delay(500);
-	} else if (distance <= Height - 35) {
+	} else if (distance <= (Height - 135)) {
 
 		Serial.println("I find something near me!");
 		tone(buzzerPin, 1100, 300);
