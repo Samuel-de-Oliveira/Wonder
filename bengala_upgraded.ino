@@ -29,11 +29,15 @@ void setup() {
 	pinMode(buzzerPin, OUTPUT);
 	pinMode(vibrationPin, OUTPUT);
 	Serial.begin(9600);
+	Serial.println("The monitor serial is only to see if the components is working correctly");
+	Serial.println("else this don't have anything to see here.");
+	delay(2000);
 }
 
 void loop() {
 	float distance = distanceSensor.measureDistanceCm();
-	Serial.println(distance);
+	Serial.print(distance);
+	Serial.println("cm");
 
 	if (distance == -1 or Height <= 130) {
 		
