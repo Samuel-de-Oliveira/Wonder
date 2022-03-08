@@ -9,7 +9,6 @@ This project accept all issues and pull requests, so if you have a good idea
 don't be shy to share with us. :smile:
 
 ### The project working
-
 - Comming soon.
 
 ### How to build this?
@@ -18,7 +17,7 @@ First you need this materials to start:
 **Software:**
 
 - Arduino IDE or [Arduino Makefile](https://github.com/sudar/arduino-makefile) to compile code.
-- [HCSR04](https://github.com/Martinsos/arduino-lib-hc-sr04) library.
+- [HCSR04](https://github.com/Martinsos/arduino-lib-hc-sr04) library by Martin Šošić.
 
 **Hardware:**
 
@@ -57,8 +56,8 @@ This is a code error, to fix it check if one of these situations is same of your
 1. The ultrasonic is not connected or the connections are wrong. (To solve you just need to connect the ultrassonic in your Arduino).
 1. The constant `Height` is lower than 130cms (To solve you need to write a value higher than 130 cm).
 
-If you don't see this message probally is something wrong in the circuit scheme,
-so you need to check the connections again.
+If you don't see this message probably is something wrong in the circuit scheme,
+so you need to check the connections again and check if some component is broken.
 
 #### Version: *0.1 BETA*.
 #### Owner of project: *Samuel de Oliveira*.
