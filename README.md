@@ -3,7 +3,15 @@ This project is based in a outher project created by studants of IFMT
 (Federal Institute of Mato Grosso) in Brazil, but this mencioned project
 not is Open Source, because this we (Studants of Microcamp in Arapiraca)
 decided to create a Open Source version to make a experimet with outhers
-studants to tell about the importance of Open Source for people with disbilities.
+studants to tell about the importance of Open Source for people with
+disbilities.
+
+### What this project do?
+This project is a walkstick for visually impaired people, but this one can
+solve a traditional problem thats occurs every time, the traditional walkstick
+can't touch something is above itself making the person bumb in the floating
+thing. What this project do is simple: It tells to the person if is something
+above the stick, with sounds of buzzer (or vibration for some cases of blindness)
 
 This project accept all issues and pull requests, so if you have a good idea
 don't be shy to share with us. :smile:
