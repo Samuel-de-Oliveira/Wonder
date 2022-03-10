@@ -71,4 +71,4 @@ so you need to check the connections again and check if some component is broken
 
 #### Version: *0.1 BETA*.
 #### Owner of project: *Samuel de Oliveira*.
-#### Project created by studants of Microcamp to a Open Source experiment.
+#### Project created by students of Microcamp to a Open Source experiment.
