@@ -1,7 +1,7 @@
 ## Bengala Upgraded
 This project is based in a outher project created by studants of IFMT
 (Federal Institute of Mato Grosso) in Brazil, but this mencioned project
-not is Open Source, because this we (Studants of Microcamp in Arapiraca)
+not is Open Source, because this we (Students of Microcamp in Arapiraca)
 decided to create a Open Source version to make a experimet with outhers
 studants to tell about the importance of Open Source for people with
 disbilities.
@@ -40,7 +40,9 @@ First you need this materials to start:
 - Tree stick (Why not?);
 - Sefie stick.
 
-If you want to add something in your project you are free to do it.
+The stick you can use and do anything you want, thats mean if you want to add
+something in your project you are free to do it, this is the real meaning
+of Open Source, the future is adapt to every needs.
 
 After have all required items you need to make this simple scheme with your
 Arduino:
