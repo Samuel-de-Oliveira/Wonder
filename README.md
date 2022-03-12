@@ -1,4 +1,4 @@
-## Bengala Upgraded
+## Wonder Project
 This project is based in a outher project created by studants of IFMT
 (Federal Institute of Mato Grosso) in Brazil, but this mencioned project
 not is Open Source, because this we (Students of Microcamp in Arapiraca)
@@ -59,7 +59,7 @@ if the you see a message like this:
 
 	Oh no! Something is not working well
 	Please check the software's repository in Github for support of this error:
-	www.github.com/Samuel-de-Oliveira/bengala_upgraded#fix-errors
+	www.github.com/Samuel-de-Oliveira/Wonder#fix-errors
 
 This is a code error, to fix it check if one of these situations is same of yours:
 

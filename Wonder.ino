@@ -1,5 +1,5 @@
 /*
- * --*--* Bengala_upgraded *--*--
+ * --*--* Wonder project *--*--
  * 
  * This project is based in a outher one made by studants
  * of Federal Institute of Mato Grosso. This project diferent
@@ -44,7 +44,7 @@ void loop() {
 		// Error message, will be showed if something is not working in code or circuit.
 		Serial.println("Oh no! Something is not working well");
 		Serial.println("Please check the software's repository in Github for support of this error:");
-		Serial.println("www.github.com/Samuel-de-Oliveira/bengala_upgraded#fix-errors");
+		Serial.println("www.github.com/Samuel-de-Oliveira/Wonder#fix-errors");
 
 		for (byte i = 0; i < 3; i++) {
 
