@@ -31,7 +31,7 @@ void setup() {
 	Serial.begin(9600);
 	Serial.println("The monitor serial is only to see if the components is working correctly");
 	Serial.println("else this don't have anything to see here.");
-	delay(2000);
+	delay(1000);
 }
 
 void loop() {
@@ -39,7 +39,7 @@ void loop() {
 	Serial.print(distance);
 	Serial.println("cm");
 
-	if (distance == -1 or Height <= 130) {
+	if ( distance == -1 or Height <= 130 ) {
 		
 		// Error message, will be showed if something is not working in code or circuit.
 		Serial.println("Oh no! Something is not working well");
@@ -55,7 +55,7 @@ void loop() {
 		}
 		delay(250);
 
-	} else if ((Height - 115) < distance and distance <= (Height - 80)) {
+	} else if ( Height - 135 < distance and distance <= Height - 100 ) {
 		
 		// Slow beep.
 		Serial.println("I found something far me!");
@@ -66,7 +66,7 @@ void loop() {
 		digitalWrite(vibrationPin, LOW);
 		delay(500);
 
-	} else if (distance <= (Height - 135)) {
+	} else if ( distance <= Height - 135 ) {
 		
 		// Fast beep.
 		Serial.println("I found something near me!");
