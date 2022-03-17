@@ -30,9 +30,11 @@ First you need this materials to start:
 **Hardware:**
 
 - **1**X Arduino UNO or Arduino Nano;
-- **1**X Ultrassonic sensor (HC-SR04);
-- **120**CM Ethernet cable (To use in conections of components)
-- **1**X 3.3V Buzzer.
+- **1**X Ultrasonic sensor (HC-SR04);
+- Jumpers conections;
+- **1**X Battery adapter for Arduino;
+- **1**X 3.3V Buzzer;
+- **1**X DC motor for vibration (Optional).
 
 **Sugestions of things to use as a walkstick (thats we recommend):**
 
@@ -63,11 +65,18 @@ if the you see a message like this:
 
 This is a code error, to fix it check if one of these situations is same of yours:
 
-1. The ultrasonic is not connected or the connections are wrong. (To solve you just need to connect the ultrassonic in your Arduino).
+1. The ultrasonic is not connected or the connections are wrong. (To solve you just need to connect the ultrassonic in your Arduino);
 1. The constant `Height` is lower than 130cms (To solve you need to write a value higher than 130 cm).
 
 If you don't see this message probably is something wrong in the circuit scheme,
 so you need to check the connections again and check if some component is broken.
+
+**Some circuit problems:**
+
+1. Buzzer conections is not correct;
+1. Your Arduino is broken :cry:.
+
+- I hope this topic helpful for you.
 
 #### Version: *0.1 BETA*.
 #### Owner of project: *Samuel de Oliveira*.
