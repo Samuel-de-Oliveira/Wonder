@@ -46,7 +46,7 @@ void loop() {
 		Serial.println("Please check the software's repository in Github for support of this error:");
 		Serial.println("www.github.com/Samuel-de-Oliveira/Wonder#fix-errors");
 
-		for (byte i = 0; i < 3; i++) {
+		for ( byte i = 0; i < 3; i++ ) {
 
 			tone(buzzerPin, 1000, 300);
 			delay(100);
@@ -55,7 +55,7 @@ void loop() {
 		}
 		delay(250);
 
-	} else if ( Height - 135 < distance and distance <= Height - 100 ) {
+	} else if ( Height - 150 < distance and distance <= Height - 120 ) {
 		
 		// Slow beep.
 		Serial.println("I found something far me!");
@@ -66,7 +66,7 @@ void loop() {
 		digitalWrite(vibrationPin, LOW);
 		delay(500);
 
-	} else if ( distance <= Height - 135 ) {
+	} else if ( distance <= Height - 150 ) {
 		
 		// Fast beep.
 		Serial.println("I found something near me!");
