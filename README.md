@@ -1,5 +1,5 @@
 ## Wonder Project
-This project is based in a outher project created by studants of IFMT
+This project is based in a outher project created by students of IFMT
 (Federal Institute of Mato Grosso) in Brazil, but this mencioned project
 not is Open Source, because this we (Students of Microcamp in Arapiraca)
 decided to create a Open Source version to make a experimet with outhers
