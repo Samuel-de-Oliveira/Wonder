@@ -31,8 +31,9 @@ First you need this materials to start:
 
 - **1**X Arduino UNO or Arduino Nano;
 - **1**X Ultrassonic sensor (HC-SR04);
-- **120**CM Ethernet cable (To use in conections of components)
-- **1**X 3.3V Buzzer.
+- Jumpers connectors;
+- **1**X 3.3V Buzzer;
+- **1**X DC Motor for vibration (Optional).
 
 **Sugestions of things to use as a walkstick (thats we recommend):**
 
