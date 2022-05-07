@@ -7,6 +7,9 @@
  * with studants to know the matters of Open Source for people
  * with disabilities.
  *
+ * Warning: If you want to edit something in the code, please
+ * read the comments to avoid problems. 
+ *
  * Author: Samuel de Oliveira (Github: Samuel-de-Oliveira)
  * Contribuitors: None
  *
@@ -14,15 +17,27 @@
 
 #include <HCSR04.h>
 
-// Here is the pins scheme, you can change it if you want.
+// Here is the pins scheme, you can change it if is required use other pin.
 const byte triggerPin   = 3;
 const byte echoPin      = 4;
 const byte vibrationPin = 10;
 const byte buzzerPin    = 9;
 
-// Here is the values of fisiology of person (Required to change if you want a good experience).
-const byte Height = 180; // if you digit a value lower than 130cm, the code couldn't work.
+/*
+ * The const "Height" is the height of the user of the stick, here
+ * you obviosly will put the value of height in cm. With this
+ * constant the arduino will does all required calculation.
+ *
+ * Warning: if you put a height lower or equals of 130m the pogram
+ * will not work.
+ *
+ * Fun fact: The default value is 178cm because it's the same height
+ * of the code creator (Yeah I'm tall).
+ *
+ */
+const byte Height = 178; 
 
+// The ultrasonic's variable.
 UltraSonicDistanceSensor distanceSensor(triggerPin, echoPin);
 
 void setup() {
@@ -35,6 +50,7 @@ void setup() {
 }
 
 void loop() {
+	// Distance variavle.
 	float distance = distanceSensor.measureDistanceCm();
 	Serial.print(distance);
 	Serial.println("cm");
@@ -47,7 +63,6 @@ void loop() {
 		Serial.println("www.github.com/Samuel-de-Oliveira/Wonder#fix-errors");
 
 		for ( byte i = 0; i < 3; i++ ) {
-
 			tone(buzzerPin, 1000, 300);
 			delay(100);
 			noTone(buzzerPin);
