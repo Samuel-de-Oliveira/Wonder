@@ -20,39 +20,12 @@ don't be shy to share with us. :smile:
 - Comming soon.
 
 ### How to build this?
-First you need this materials to start:
+The project have 2 differents versions, the first is with 1 ulrasonic and 
+the second is with 2 ultrasonics. Click in the follow links to see the
+intructions of creation.
 
-**Software:**
-
-- Arduino IDE or [Arduino Makefile](https://github.com/sudar/arduino-makefile) to compile code.
-- [HCSR04](https://github.com/Martinsos/arduino-lib-hc-sr04) library by Martin Šošić.
-
-**Hardware:**
-
-- **1**X Arduino UNO or Arduino Nano;
-- **1**X Ultrassonic sensor (HC-SR04);
-- Jumpers connectors;
-- **1**X 3.3V Buzzer;
-- **1**X DC Motor for vibration (Optional).
-
-**Sugestions of things to use as a walkstick (thats we recommend):**
-
-- Traditional walkstick for blind people;
-- Tree stick (Why not?);
-- Sefie stick.
-
-The stick you can use and do anything you want, thats mean if you want to add
-something in your project you are free to do it, this is the real meaning
-of Open Source, the future is adapt to every needs.
-
-After have all required items you need to make this simple scheme with your
-Arduino:
-
-<img src="Imagens/scheme.jpg">
-
-After this you need to clone the repository and compile with IDE or makefile
-and it will work with no errors. If the project is not working well or having
-any error, please check the next topic.
+- [1 ultrasonic](/1-sensor)
+- [2 ultrasonics](/2-sensor)
 
 ### Fix Errors
 So to know if your project is having any error, check the monitor serial and
