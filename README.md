@@ -24,8 +24,8 @@ The project have 2 differents versions, the first is with 1 ulrasonic and
 the second is with 2 ultrasonics. Click in the follow links to see the
 intructions of creation.
 
-- [1 ultrasonic](/1-sensor)
-- [2 ultrasonics](/2-sensor)
+- [1 ultrasonic](https://github.com/Samuel-de-Oliveira/Wonder/tree/main/1-Sensor)
+- [2 ultrasonics](https://github.com/Samuel-de-Oliveira/Wonder/tree/main/2-Sensor)
 
 ### Fix Errors
 So to know if your project is having any error, check the monitor serial and
