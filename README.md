@@ -11,7 +11,7 @@ disbilities.
 ### What this project do?
 This project is a walkstick for visually impaired people, but this one can
 solve a traditional problem thats occurs every time, the traditional walkstick
-can't touch something is above itself making the person bumb in the floating
+can't touch something is above itself making the person collide in the floating
 thing. What this project do is simple: It tells to the person if is something
 above the stick, with sounds of buzzer (or vibration for some cases of blindness)
 

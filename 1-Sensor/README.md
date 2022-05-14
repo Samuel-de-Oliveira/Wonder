@@ -1,4 +1,9 @@
 ## Materials:
+> If you need change something in the code you are free to do this!
+
+> :warning: If you fond a bug in code please report in a issue or
+fix it with a pull request
+
 **Software:**
 
 - Arduino IDE or [Arduino Makefile](https://github.com/sudar/arduino-makefile) to compile code.
@@ -23,3 +28,11 @@ something in your project you are free to do it, this is the real meaning
 of Open Source, the future is adapt to every needs.
 
 ## Building
+First you need to build the follow scheme:
+
+![](Imagens/scheme.jpg)
+
+after this upload the `1-Sensor.ino` file to your Arduino using the IDE
+and done!
+
+> :warning: if it doesn`t working, check this [link](https://github.com/Samuel-de-Oliveira/Wonder#fix-errors)
